@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "postinstall": "tsc",
+    "postinstall": "node tsc",
     "start": "node dist/server.js",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "typeorm-production": "ts-node --transpile-only ./node_modules/typeorm/cli.js"
