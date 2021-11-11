@@ -5,9 +5,15 @@
   "main": "server.ts",
   "author": "Thiago Mendes",
   "license": "MIT",
+  "engines": {
+    "node": "12"
+  },
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+    "postinstall": "tsc",
+    "start": "node dist/server.js",
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
+    "typeorm-production": "ts-node --transpile-only ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

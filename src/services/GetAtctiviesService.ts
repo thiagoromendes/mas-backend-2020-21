@@ -10,7 +10,7 @@ class GetAtctiviesService{
     public async execute(data:UserId){
         const activyRepository = getRepository(Activy);
 
-        const activies = await activyRepository.find();
+        const activies = await activyRepository.find({relations: ["course_unit"]});
 
         if(!activies){
             return {
