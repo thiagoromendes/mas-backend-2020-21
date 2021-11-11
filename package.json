@@ -2,7 +2,7 @@
   "name": "mas-backend",
   "version": "1.0.0",
   "description": "api for application",
-  "main": "server.ts",
+  "main": "server.js",
   "author": "Thiago Mendes",
   "license": "MIT",
   "engines": {
